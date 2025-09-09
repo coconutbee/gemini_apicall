@@ -18,7 +18,7 @@ with open(prompt_path, 'r') as file:
 input_image_folder = '/media/ee303/disk1/dataset/cemi_id'
 
 for parent, subdirs, files in os.walk(input_image_folder):
-    for file in files:
+    for file in files:                                     
         if file.endswith(('.png', '.jpg', '.jpeg')):
             image_path = os.path.join(parent, file)
             for i, single_prompt in enumerate(prompt):
